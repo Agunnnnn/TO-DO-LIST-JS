@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Font -->
+    <script>tailwind.config ={
+        theme : {
+            extend: {
+                fontFamily: {
+                    poppins: ['Poppins', 'sans-serif'],
+                },
+            },
+        },
+    }</script>
+    
+    <style>
+        .completed {
+            text-decoration: line-through;
+            color: #6b7280;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-[#141e30] to-[#243b55] 
+            min-h-screen
+            grid place-items-center font-poppins">
+
+
+    <div class="contaiter
+                border 
+                border-gray-300 
+                p-2
+                rounded-xl 
+                shadow-[0_0_30px_rgba(255,255,255,0.25)]
+                py-[20px] px-[20px]">
+
+
+        <div id="NewTask" 
+            class="bg-[#ffffff] 
+            py-[12px] px-[12px] 
+            flex 
+            border 
+            rounded-xl">
+
+            <input type="text" 
+                    placeholder="Task To Be Done..." 
+                    class="font-poppins 
+                    px-[10px] py-[8px] 
+                    border 
+                    rounded-xl 
+                    shadow-lg
+                    ">
+            <button id="push" 
+            class="relative 
+            border 
+            bg-[#243b55] 
+            text-white 
+            py-[8px] px-[20px]
+            border-shadow-xl 
+            border-gray-300 
+            rounded-xl 
+            ml-2">ADD</button>
+        </div>
+        <div id="Tasks" 
+
+        class="px-[30px] py-[40px] 
+        mt-6 
+        border 
+        bg-[#ffffff] 
+        border 
+        rounded-xl
+        "></div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
